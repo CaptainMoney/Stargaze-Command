@@ -21,3 +21,9 @@ body {
   100% { opacity: 1; } 
 }
 
+/* position player at bottom */ 
+#playerShip {
+  position: absolute;
+  bottom: 0;
+}
+
