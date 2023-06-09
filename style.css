@@ -1,29 +1,16 @@
 body {
-  background: black; 
+  background-color: black;
 }
 
-#gameCanvas {
-  background: black;
-  border: 1px solid white;
+canvas {
+  width: 500px;
+  height: 500px;
 }
 
-.star {
-  position: absolute;
-  height: 2px;
-  width: 2px;
-  background: white;
-  animation: twinkle 2s infinite;
+.player-ship {
+  fill: white;
 }
 
-@keyframes twinkle {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; } 
+.enemy-ship {
+  fill: red;
 }
-
-/* position player at bottom */ 
-#playerShip {
-  position: absolute;
-  bottom: 0;
-}
-
