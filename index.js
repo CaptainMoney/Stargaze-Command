@@ -3,17 +3,17 @@ const ctx = canvas.getContext('2d');
 
  Load images
 const playerShipImg = new Image();
-playerShipImg.src = 'images/playerShip.png';
+playerShipImg.src = 'images/50.png';
 
 const enemyShipImg = new Image();
-enemyShipImg.src = 'images/enemyShip.png';  
+enemyShipImg.src = 'images/68.png';  
 
 // Player ship 
 const playerShip = {
   x: canvas.width / 2,
   y: canvas.height - 50,
-  width: 70,  // Set width/height to 70
-  height:70
+  width: 30,  // Set width/height to 70
+  height: 30
 };
 
 // Enemy ships 
@@ -24,8 +24,8 @@ function spawnEnemy() {
   enemyShips.push({
     x: Math.random() * canvas.width,
     y: 0,  // Start at top
-    width: 70,
-    height: 70
+    width: 40,
+    height: 40
   });
 }
 
