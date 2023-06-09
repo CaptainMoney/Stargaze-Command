@@ -1,1 +1,23 @@
+body {
+  background: black; 
+}
+
+#gameCanvas {
+  background: black;
+  border: 1px solid white;
+}
+
+.star {
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  background: white;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; } 
+}
 
